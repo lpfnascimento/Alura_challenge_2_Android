@@ -1,13 +1,11 @@
-package alura.ecommerce.challenge.ui
+package alura.ecommerce.challenge.ui.activity
 
-import alura.ecommerce.challenge.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MainActivity : AppCompatActivity() {
+class FormProductActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_form_product)
     }
-
-
-    }
+}
