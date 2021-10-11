@@ -5,9 +5,18 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.15092592592592594" />
         <entry key="app/src/main/res/drawable/gradient_background.xml" value="0.15092592592592594" />
+        <entry key="app/src/main/res/layout/activityProductUnit.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_ProductList.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/activity_form_product.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_formulario_produto.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/activity_lista_produtos.xml" value="0.18229166666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19322916666666667" />
-        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_productUnit.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/activity_product_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_product_unit.xml" value="0.18229166666666666" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/produto_item.xml" value="0.18229166666666666" />
       </map>
     </option>
   </component>
