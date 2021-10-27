@@ -2,6 +2,7 @@ package alura.ecommerce.challenge.ui.activity
 
 import alura.ecommerce.challenge.R
 import alura.ecommerce.challenge.dao.DaoProduct
+import alura.ecommerce.challenge.databinding.ActivityMainBinding
 import alura.ecommerce.challenge.model.Product
 import alura.ecommerce.challenge.ui.recyclerview.AdapterRecyclerView
 import android.content.Intent
@@ -15,24 +16,34 @@ import java.math.BigDecimal
 
 class MainActivity : AppCompatActivity(R.layout.activity_main)
 {
-    override fun onCreate(savedInstanceState: Bundle?)  {
+       private val binding by lazy {
+        ActivityMainBinding.inflate(layoutInflater)
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
+        setContentView(binding.root)
+        fabButtonConfigure()
     }
 
     override fun onResume() {
+
         super.onResume()
         val daoList = DaoProduct()
         val adapter = AdapterRecyclerView(itens = daoList.searchAll(), context = this)
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerview_lista_produtos)
+        val recyclerView = binding.recyclerviewListaProdutos
         recyclerView.adapter = adapter
+    }
 
-        val fab = findViewById<FloatingActionButton>(R.id.fab_product_list)
+    private fun fabButtonConfigure()
+    {
+        val fab = binding.fabProductList
         fab.setOnClickListener {
             val intent = Intent(this, FormProductActivity::class.java)
             startActivity(intent)
         }
-        Log.i("atualiza", "oncrete: $daoList")
     }
-}
+}//end_main_activity
 
 
